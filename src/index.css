@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-brand: 'Cinzel', serif;
+  
+  --color-stoa-canvas: #F3F4ED;
+  --color-stoa-secondary: #536162;
+  --color-stoa-primary: #424642;
+  --color-stoa-accent: #C06014;
+}
+
+:root {
+  --app-bg: #F3F4ED;
+  --app-card: #FFFFFF;
+  --app-border: #E5E7DC;
+  --app-text: #424642;
+  --app-muted: #536162;
+  --app-accent: #C06014;
+}
+
+.dark {
+  --app-bg: #1A1C1A;
+  --app-card: #252825;
+  --app-border: #353935;
+  --app-text: #F3F4ED;
+  --app-muted: #9BA39B;
+  --app-accent: #D47428;
+}
+
+/* Tabular figures for all financial calculations & tables */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4C8BA;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A595;
+}
+
+/* Print styles for PDF / Printer export */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

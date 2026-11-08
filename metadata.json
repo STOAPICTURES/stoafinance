@@ -1,0 +1,6 @@
+{
+  "name": "STOA FINANCE – Accounting & Project Management System",
+  "description": "Professional accounting and project management web application for STOA PICTURES wedding photography & videography business.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

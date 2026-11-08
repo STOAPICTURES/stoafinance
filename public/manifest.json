@@ -1,0 +1,56 @@
+{
+  "id": "/?homescreen=1",
+  "name": "STOA FINANCE – Accounting & Project Management",
+  "short_name": "STOA",
+  "description": "Aplikasi pembukuan dan manajemen proyek fotografi pernikahan STOA PICTURES.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#C06014",
+  "background_color": "#1E201E",
+  "categories": ["finance", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah Proyek Baru",
+      "short_name": "Proyek",
+      "description": "Buka form booking proyek foto/video baru",
+      "url": "/?tab=projects&action=new",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Catat Pengeluaran",
+      "short_name": "Pengeluaran",
+      "description": "Input bukti kas keluar & biaya vendor/tim",
+      "url": "/?tab=expenses&action=new",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Rekap Keuangan Bulanan",
+      "short_name": "Rekap",
+      "description": "Lihat ringkasan laba kotor, bersih, dan cash flow",
+      "url": "/?tab=recap",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
